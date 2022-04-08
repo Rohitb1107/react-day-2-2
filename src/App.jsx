@@ -10,9 +10,10 @@ function App() {
       <div className="counter-card">
         <h1>Counter : {count}</h1>
         <div className="btn-div">
-          <button>Add</button>
-          <button>Remove</button>
+          <button onClick={() => setCount(count + 1)}>Add</button>
+          <button onClick={() => setCount(count - 1)}>Remove</button>
         </div>
+        <button onClick={() => setCount(count * 2)}>Double</button>
       </div>
     </>
   );
