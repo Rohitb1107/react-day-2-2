@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TodoInput } from "./TodoInput";
 import { TodoItem } from "./TodoItem";
+import "./Todo.css";
 
 function Todo() {
   const [todosList, setTodosList] = useState([]);
@@ -10,12 +11,14 @@ function Todo() {
   };
 
   return (
-    <div>
+    <div className="list-div">
       <TodoInput getData={getData} />
 
-      {todosList.map((e) => (
-        <TodoItem todo={e}></TodoItem>
-      ))}
+      <div className="items-div">
+        {todosList.map((e) => (
+          <TodoItem todo={e}></TodoItem>
+        ))}
+      </div>
     </div>
   );
 }

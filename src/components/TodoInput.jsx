@@ -5,21 +5,23 @@ export const TodoInput = ({ getData }) => {
 
   return (
     <>
-      <input
-        type="text"
-        onChange={(e) => {
-          setText(e.target.value);
-        }}
-        placeholder="Enter Task"
-      />
+      <div className="first-div">
+        <input
+          type="text"
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+          placeholder="Enter Task"
+        />
 
-      <button
-        onClick={() => {
-          getData(text);
-        }}
-      >
-        Add Task
-      </button>
+        <button
+          onClick={() => {
+            getData(text);
+          }}
+        >
+          Add Task
+        </button>
+      </div>
     </>
   );
 };

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  margin-top: 2em;
+  font-size: 20px;
+}
+
+button {
+  width: 160px;
+  height: 30px;
+  margin: 2.1em;
+  font-size: 20px;
+}
+
+.first-div {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.items-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo-div {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
